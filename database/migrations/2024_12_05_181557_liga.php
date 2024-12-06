@@ -15,7 +15,7 @@ return new class extends Migration
         Schema::create('liga', function (Blueprint $table) {
             $table->id();
             $table->string('liga');
-            $table->foreignIdFor(Pais::class);
+            $table->foreignIdFor(Pais::class); //relacion con el id de pais
         });
     }
 

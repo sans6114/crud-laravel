@@ -14,4 +14,8 @@ class Equipo extends Model
         'liga_id',
         'pais_id',
     ];
+
+    public function ligaf(){
+        return $this->belongsTo(Liga::class, "liga_id", "id");
+    }
 }
